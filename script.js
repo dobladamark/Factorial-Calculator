@@ -1,15 +1,16 @@
-let num = 7;
+let num = 10;
 
 function factorialCalculator(n) {
-  let result = 1;
-  for (let i = 1; i <= n; i++) {
-    result *= i; 
-  }
-  return result;
+let result = 1;
+
+for (let counter = 1; counter <= n; counter++) {
+  result *= counter;
+} 
+return result;
 }
 
 let factorial = factorialCalculator(num);
 
-let resultMsg = `Factorial of ${num} is ${factorial}`;
+let resultMsg = (`Factorial of ${num} is ${factorial}`)
 
-console.log(resultMsg);
+console.log(resultMsg)
